@@ -559,3 +559,29 @@ h4.central {
 h4 strong.central {
     color: #3498db;
 }
+/* ... Mantenha o CSS anterior ... */
+
+/* NOVO: Estilo para o container de senha e o ícone do olho */
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px; /* Espaço para não escrever em cima do ícone */
+}
+
+.password-container i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    font-size: 14px;
+}
+
+.password-container i:hover {
+    color: #0077b6;
+}
