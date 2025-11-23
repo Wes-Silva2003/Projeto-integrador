@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "https://mateus774v2.pythonanywhere.com";
 
 document.addEventListener("DOMContentLoaded", () => {
     const path = window.location.pathname;
@@ -222,4 +222,5 @@ async function iniciarPaginaTabela() {
     });
 }
 window.prepararEdicao = (id) => { localStorage.setItem("idProdutoEdicao", id); window.location.href = "Cadastro_de_produtos.html"; }
+
 window.deletarProduto = async (id) => { if (confirm("Excluir?")) { await fetch(`${API_URL}/produtos/${id}`, { method: "DELETE" }); window.location.reload(); } }
