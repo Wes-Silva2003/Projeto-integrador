@@ -5,6 +5,9 @@
 ![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Flask](https://img.shields.io/badge/Flask-2.x-green)
+![HTML5](https://img.shields.io/badge/HTML5-orange)
+![CSS3](https://img.shields.io/badge/CSS3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E)
 
 ## 📄 Sobre o Projeto
 
@@ -56,7 +59,6 @@ O sistema opera numa arquitetura **Cliente-Servidor**, onde o Frontend consome u
 │   ├── tabela...html      # Listagem de estoque
 │   ├── Sistema_script.js  # Lógica principal do Frontend
 │   └── imagens/           # Assets do projeto
-
 ```
 
 ---
