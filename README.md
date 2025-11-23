@@ -2,7 +2,7 @@
 
 > Projeto Integrador - Ciência da Computação
 
-![Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-yellow)
+![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Flask](https://img.shields.io/badge/Flask-2.x-green)
 
@@ -59,13 +59,11 @@ O sistema opera numa arquitetura **Cliente-Servidor**, onde o Frontend consome u
 
 ```
 
-👥 Autores
-Projeto desenvolvido pela equipe de estudantes de Ciência da Computação:
+---
 
-Estela Vidal
-
-Mateus de Souza
-
-Welinton Sandrin
-
-Wesley da Silva
+### 👥 Autores
+* **Projeto desenvolvido pela equipe de estudantes de Ciência da Computação:*
+* **Estela Vidal**
+* **Mateus de Souza**
+* **Welinton Sandrin**
+* **Wesley da Silva**
