@@ -7,8 +7,16 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-ARQUIVO_DB = 'banco.json'
-ARQUIVO_USUARIOS = 'usuarios.json'
+# --- CONFIGURAÇÃO DE CAMINHOS (CORREÇÃO PARA SERVIDOR) ---
+# Isso garante que o servidor encontre os arquivos JSON na pasta certa
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+ARQUIVO_DB = os.path.join(BASE_DIR, 'banco.json')
+ARQUIVO_USUARIOS = os.path.join(BASE_DIR, 'usuarios.json')
+
+# --- ROTA INICIAL (NOVA) ---
+@app.route('/')
+def home():
+    return "SIMPSTOCK ONLINE"
 
 # --- Funções Auxiliares ---
 def carregar_json(arquivo):
@@ -130,5 +138,5 @@ def delete_usuario(id_usuario):
     return jsonify({"message": "Usuário deletado!"}), 200
 
 if __name__ == '__main__':
-    print("Servidor rodando! http://127.0.0.1:5000")
+    # Em produção (PythonAnywhere), isso aqui é ignorado, mas ajuda no teste local
     app.run(debug=True, port=5000)
